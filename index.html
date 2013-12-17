@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>OpenMD by OpenMD</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>OpenMD</h1>
+          <h2>Molecular Dynamics in the Open</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/OpenMD/2.2/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/OpenMD/2.2/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/OpenMD/2.2" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p>OpenMD is an open source molecular dynamics engine which is capable of
+efficiently simulating liquids, proteins, nanoparticles, interfaces,
+and other complex systems using atom types with orientational degrees
+of freedom (e.g. "sticky" atoms, point dipoles, and coarse-grained
+assemblies). Proteins, zeolites, lipids, transition metals (bulk, flat
+interfaces, and nanoparticles) have all been simulated using force
+fields included with the code. OpenMD works on parallel computers
+using the Message Passing Interface (MPI), and comes with a number of
+analysis and utility programs that are easy to use and modify. An
+OpenMD simulation is specified using a very simple meta-data language
+that is easy to learn.</p>
+
+<p>Simulations are started in OpenMD using a single Molecular Dynamics (.md) 
+file.  These files must start with the  tag and must have two 
+sections:</p>
+
+<p>1) a C-based  section, and </p>
+
+<p>2) a  block for initial coordinate and velocity information.</p>
+
+<p>Detailed descriptions of the structures of these files are available
+in the "doc" directory.  Sample simulations are available in the
+"samples" directory.</p>
+
+<h3>
+<a name="what-you-need-to-compile-and-use-openmd" class="anchor" href="#what-you-need-to-compile-and-use-openmd"><span class="octicon octicon-link"></span></a>What you need to compile and use OpenMD:</h3>
+
+<p>1) A good C++ compiler.  We've built and tested OpenMD on the
+    following architecture &amp; compiler combinations:</p>
+
+<pre><code>Architecture                CXX    Notes
+-------------------------   ----   ----------------------
+Mac OS X 10.9 (intel)       c++    (Apple LLVM version 5.0)
+Mac OS X 10.9 (intel)       g++    (GNU version 4.8.1)
+Mac OS X 10.9 (intel)       icpc   (Intel version 14.0)
+Linux (Ubuntu 13 – x86_64)  g++    (GNU version 4.7.3)
+Linux (RHEL 6.4 - x86_64)   icpc   (Intel version 14.0)
+Linux (RHEL 6.4 - x86_64)   pgCC   (Portland Group version 12.3)
+
+OpenMD uses features in the standard template library (STL). Most
+(but not all) C++ compilers support these features.
+</code></pre>
+
+<p>2) CMake, a cross-platform build system which is available at
+    <a href="http://www.cmake.org">http://www.cmake.org</a>     Most Linux and some Unix distributions
+    provide CMake as a standard package. If not, please download it,
+    and make sure you get a recent version. Mac OS X users can either
+    download the CMake installer or install it from the command line
+    using macports.</p>
+
+<p>3) An implementation of MPI-2 is optional for the single processor
+    version of OpenMD, but is required if you want OpenMD to run in
+    parallel. We like OpenMPI. Other implementations of MPI-2 might
+    work, but we haven't tried.  You can get Open MPI here:
+    <a href="http://www.open-mpi.org/">http://www.open-mpi.org/</a></p>
+
+<p>4) Other optional (but quite useful) libraries that will unlock some
+    features of OpenMD:</p>
+
+<pre><code>  Open Babel:  http://openbabel.org
+  Qhull:       http://www.qhull.org
+  FFTW:        http://www.fftw.org
+  Doxygen:     http://www.doxygen.org
+</code></pre>
+
+<p>5) Some of the utility scripts depend on Python and Perl.  These
+    interpreters are common installations on most flavors of Unix and
+    Mac OS X.</p>
+
+<h3>
+<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>INSTRUCTIONS</h3>
+
+<p>1) Get, build, and test the required pieces above.
+ 2) mkdir build
+ 3) cd build
+ 4) cmake ..
+ 5) make
+ 6) sudo make install</p>
+
+<p>That's it.</p>
+        </section>
+
+        <footer>
+          OpenMD is maintained by <a href="https://github.com/OpenMD">OpenMD</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
